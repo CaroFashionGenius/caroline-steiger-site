@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caroline Steiger | Enterprise SaaS Sales Leader</title>
+  <meta name="description" content="Caroline Steiger - Enterprise SaaS Sales Leader with 17+ years in enterprise software sales, SaaS transformation, cloud, infrastructure and customer relationship building." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #07111f;
+      --bg-soft: #0d1b2d;
+      --card: rgba(255, 255, 255, 0.06);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --text: #f8fafc;
+      --muted: #aab7c7;
+      --blue: #35a7ff;
+      --blue-soft: rgba(53, 167, 255, 0.14);
+      --white: #ffffff;
+      --green: #b7ff5a;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at top right, rgba(53, 167, 255, 0.18), transparent 32%), var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(7, 17, 31, 0.76);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    .brand-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--blue);
+      box-shadow: 0 0 32px var(--blue);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .nav-links a:hover { color: var(--white); }
+
+    .section {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 92px 24px;
+    }
+
+    .hero {
+      min-height: 92vh;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 56px;
+      padding-top: 84px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--blue-soft);
+      color: #9bd7ff;
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 22px;
+    }
+
+    h1, h2, h3 { margin: 0; letter-spacing: -0.055em; }
+    h1 {
+      font-size: clamp(52px, 8vw, 104px);
+      line-height: 0.95;
+      margin-bottom: 22px;
+    }
+    h2 {
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.02;
+      margin-bottom: 18px;
+    }
+    h3 {
+      font-size: 24px;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .lead {
+      font-size: clamp(20px, 2.5vw, 29px);
+      color: #dbe7f7;
+      max-width: 800px;
+      letter-spacing: -0.03em;
+      margin: 0 0 28px;
+    }
+
+    .sublead {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .btn {
+      padding: 14px 20px;
+      border-radius: 14px;
+      font-weight: 800;
+      font-size: 15px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid rgba(255,255,255,0.14);
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: var(--blue); color: #06101d; border-color: var(--blue); }
+    .btn-secondary { background: rgba(255,255,255,0.06); color: var(--white); }
+
+    .hero-card {
+      background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.035));
+      border: 1px solid var(--card-border);
+      border-radius: 34px;
+      padding: 34px;
+      box-shadow: var(--shadow);
+    }
+
+    .profile-placeholder {
+      aspect-ratio: 4 / 5;
+      border-radius: 26px;
+      background: linear-gradient(145deg, rgba(53,167,255,0.26), rgba(255,255,255,0.06));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #dbe7f7;
+      font-weight: 700;
+      padding: 28px;
+      margin-bottom: 22px;
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .mini-metric {
+      border-radius: 18px;
+      padding: 18px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .mini-metric strong {
+      display: block;
+      font-size: 28px;
+      letter-spacing: -0.05em;
+      color: var(--white);
+    }
+    .mini-metric span {
+      display: block;
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: 0 18px 50px rgba(0,0,0,0.18);
+    }
+
+    .card p, .card li { color: var(--muted); }
+    .card ul { margin: 16px 0 0; padding-left: 18px; }
+    .card li { margin: 8px 0; }
+
+    .number {
+      font-size: 66px;
+      line-height: 0.95;
+      font-weight: 850;
+      letter-spacing: -0.08em;
+      color: var(--blue);
+      margin-bottom: 10px;
+    }
+
+    .section-intro {
+      max-width: 850px;
+      margin-bottom: 36px;
+    }
+
+    .kicker {
+      color: var(--blue);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+
+    .case {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .case-title {
+      background: linear-gradient(145deg, rgba(53,167,255,0.16), rgba(255,255,255,0.04));
+      border: 1px solid var(--card-border);
+      border-radius: 32px;
+      padding: 34px;
+    }
+
+    .case-title .label {
+      color: #9bd7ff;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+
+    .quote {
+      margin-top: 24px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      color: #dbe7f7;
+      font-size: 18px;
+      letter-spacing: -0.02em;
+    }
+    .quote small { display: block; color: var(--muted); margin-top: 12px; font-size: 13px; }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+    .pill {
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.055);
+      color: #dbe7f7;
+      border-radius: 999px;
+      padding: 9px 12px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 16px;
+    }
+    .step {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 18px;
+      padding: 20px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.09);
+    }
+    .step strong { color: var(--white); }
+    .step span { color: var(--blue); font-weight: 800; }
+    .step p { margin: 4px 0 0; color: var(--muted); }
+
+    .reference-card {
+      min-height: 270px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .reference-type {
+      color: var(--blue);
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      margin-bottom: 14px;
+    }
+    .reference-text {
+      font-size: 18px;
+      color: #edf5ff;
+      letter-spacing: -0.025em;
+      margin: 0 0 24px;
+    }
+    .reference-name {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .why {
+      background: linear-gradient(145deg, rgba(53,167,255,0.18), rgba(255,255,255,0.04));
+      border: 1px solid rgba(53,167,255,0.3);
+    }
+
+    .footer {
+      padding: 52px 24px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .print-note {
+      color: rgba(255,255,255,0.42);
+      font-size: 12px;
+      margin-top: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .hero, .grid-2, .grid-3, .grid-4, .case { grid-template-columns: 1fr; }
+      .metric-row { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .section { padding: 66px 20px; }
+      .hero { padding-top: 54px; }
+      .step { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="brand"><span class="brand-dot"></span> Caroline Steiger</a>
+      <div class="nav-links">
+        <a href="#profile">Profile</a>
+        <a href="#cases">Cases</a>
+        <a href="#references">References</a>
+        <a href="#keepit">Why Keepit</a>
+        <a href="mailto:caroline.steiger@outlook.com">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="section hero">
+      <div>
+        <div class="eyebrow">Executive Web Presentation</div>
+        <h1>Caroline Steiger</h1>
+        <p class="lead">Enterprise SaaS Sales Leader with 17+ years in enterprise software, cloud, infrastructure and SaaS transformation.</p>
+        <p class="sublead">I build trust with complex enterprise customers, align multi-stakeholder environments and turn strategic business challenges into measurable outcomes.</p>
+        <div class="buttons">
+          <a href="#cases" class="btn btn-primary">View reference cases</a>
+          <a href="#references" class="btn btn-secondary">What others say</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <div class="profile-placeholder">
+          Replace this box with your professional portrait.<br><br>
+          Recommended: square or vertical image, named <strong>caroline.jpg</strong>.
+        </div>
+        <div class="metric-row">
+          <div class="mini-metric"><strong>17+</strong><span>Years enterprise software sales</span></div>
+          <div class="mini-metric"><strong>5+</strong><span>Years VMware senior enterprise AE</span></div>
+          <div class="mini-metric"><strong>3</strong><span>Independent reference perspectives</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="profile" class="section">
+      <div class="section-intro">
+        <div class="kicker">Profile</div>
+        <h2>Not a transactional seller. A trusted advisor for complex enterprise environments.</h2>
+        <p class="sublead">My strength is combining analytical thinking, relationship building and execution. I enjoy responsibility, I like difficult challenges and I am most effective when business impact, customer trust and long-term value matter.</p>
+      </div>
+      <div class="grid-4">
+        <div class="card"><h3>Challenge-driven</h3><p>I enjoy complex situations, high expectations and the responsibility of creating clarity where others see friction.</p></div>
+        <div class="card"><h3>Customer-first</h3><p>My sales approach is built on trust, preparation, empathy and long-term relationships rather than short-term transactions.</p></div>
+        <div class="card"><h3>Analytical</h3><p>I use business cases, TCO logic, ROI thinking and stakeholder mapping to turn technology conversations into commercial outcomes.</p></div>
+        <div class="card"><h3>Entrepreneurial</h3><p>Building Fashion Genius strengthened my ability to think like a founder: product, market, execution, resilience and speed.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-intro">
+        <div class="kicker">Career highlights</div>
+        <h2>Enterprise sales experience across SaaS, cloud, infrastructure and transformation.</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card"><div class="number">17+</div><h3>Years in Enterprise Software Sales</h3><p>Experienced in complex B2B environments, C-level conversations, public sector and regulated enterprise customers.</p></div>
+        <div class="card"><div class="number">5+</div><h3>Years at VMware</h3><p>Senior Account Executive responsible for strategic enterprise and public sector accounts in Switzerland.</p></div>
+        <div class="card"><div class="number">SaaS</div><h3>Transformation Experience</h3><p>Successfully navigated customers through the shift from perpetual licensing to subscription and SaaS-based models.</p></div>
+      </div>
+    </section>
+
+    <section id="cases" class="section">
+      <div class="section-intro">
+        <div class="kicker">Reference case 01</div>
+        <h2>City of Basel — infrastructure modernization in a complex stakeholder environment.</h2>
+      </div>
+      <div class="case">
+        <div class="case-title">
+          <div class="label">Customer case</div>
+          <h3>City of Basel / ITBS</h3>
+          <p class="sublead">A long-term enterprise relationship shaped by infrastructure modernization, lifecycle management and strategic platform transformation.</p>
+          <div class="pill-list">
+            <span class="pill">Public sector</span>
+            <span class="pill">Infrastructure</span>
+            <span class="pill">Security</span>
+            <span class="pill">Cost optimization</span>
+            <span class="pill">Multi-stakeholder</span>
+          </div>
+          <div class="quote">“Customer- and solution-oriented. A trusted partner over more than five years.”<small>Thomas Reisser, Team Lead Platform Services, City of Basel</small></div>
+        </div>
+        <div class="timeline">
+          <div class="step"><span>Challenge</span><div><strong>Modernize a grown infrastructure landscape.</strong><p>The customer faced platform lifecycle requirements, increasing complexity, security considerations and cost pressure.</p></div></div>
+          <div class="step"><span>My role</span><div><strong>Align IT, architecture, finance and security stakeholders.</strong><p>I organized architecture workshops, coordinated advisory support and helped position optimized licensing and solution packages.</p></div></div>
+          <div class="step"><span>Outcome</span><div><strong>Trusted long-term partnership.</strong><p>The relationship was built through responsiveness, ownership and a strong focus on solving real customer problems.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-intro">
+        <div class="kicker">Reference case 02</div>
+        <h2>CSS Insurance — commercial leadership during SaaS subscription transformation.</h2>
+      </div>
+      <div class="case">
+        <div class="case-title">
+          <div class="label">Enterprise SaaS transformation</div>
+          <h3>5-year ELA under SaaS subscription conditions</h3>
+          <p class="sublead">The project took place during VMware's transition from classic license models to SaaS-based subscription models — creating significant technical, commercial and contractual complexity.</p>
+          <div class="pill-list">
+            <span class="pill">SaaS transition</span>
+            <span class="pill">Enterprise Agreement</span>
+            <span class="pill">Commercial leadership</span>
+            <span class="pill">ARR mindset</span>
+            <span class="pill">Team selling</span>
+          </div>
+          <div class="quote">“Caroline's customer focus was instrumental in successfully delivering one of the first subscription-based ELAs in Europe.”<small>Markus Halter, Senior Solution Architect, VMware</small></div>
+        </div>
+        <div class="timeline">
+          <div class="step"><span>Challenge</span><div><strong>Customers initially saw higher recurring costs.</strong><p>The move from perpetual to SaaS required new explanations, financial logic and confidence in long-term value.</p></div></div>
+          <div class="step"><span>My role</span><div><strong>Translate complexity into a clear commercial path.</strong><p>I led the commercial process, coordinated internally with technical and deal teams and helped guide the customer through the new subscription model.</p></div></div>
+          <div class="step"><span>Outcome</span><div><strong>Successful 5-year enterprise agreement.</strong><p>The deal became a strong proof point for SaaS transformation, customer trust and structured enterprise execution.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-intro">
+        <div class="kicker">Partner ecosystem</div>
+        <h2>Enterprise selling is never a solo sport.</h2>
+        <p class="sublead">My strongest results came from aligning customers, technical experts, partners, procurement and internal deal teams around a shared business outcome.</p>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Swisscom / Partner Collaboration</h3>
+          <p>During VMware's shift to SaaS and subscription models, partner collaboration became increasingly important. In joint projects with Swisscom, I was described as structured, solution-oriented, professional and strongly customer-focused.</p>
+          <div class="quote">“A central force with strong customer focus and structured execution.”<small>Roger Bösch, former Specialised Sales, Swisscom</small></div>
+        </div>
+        <div class="card">
+          <h3>Accounts referenced</h3>
+          <ul>
+            <li>CSS Insurance — successful 5-year ELA</li>
+            <li>Leonteq — successful 3-year ELA</li>
+            <li>USB — public-sector procurement and partner complexity</li>
+            <li>City of Basel — long-term platform modernization relationship</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="references" class="section">
+      <div class="section-intro">
+        <div class="kicker">Validation</div>
+        <h2>Consistent feedback from customers, technical teams, partners and assessment.</h2>
+      </div>
+      <div class="grid-4">
+        <div class="card reference-card">
+          <div>
+            <div class="reference-type">Customer</div>
+            <p class="reference-text">“Customer- and solution-oriented. A trusted partner over more than five years.”</p>
+          </div>
+          <div class="reference-name">Thomas Reisser<br>Team Lead Platform Services, City of Basel</div>
+        </div>
+        <div class="card reference-card">
+          <div>
+            <div class="reference-type">Technical counterpart</div>
+            <p class="reference-text">“Instrumental in delivering one of the first subscription-based ELAs in Europe.”</p>
+          </div>
+          <div class="reference-name">Markus Halter<br>Senior Solution Architect, VMware</div>
+        </div>
+        <div class="card reference-card">
+          <div>
+            <div class="reference-type">Strategic partner</div>
+            <p class="reference-text">“A central force with clarity, structure and customer focus.”</p>
+          </div>
+          <div class="reference-name">Roger Bösch<br>Former Specialised Sales, Swisscom</div>
+        </div>
+        <div class="card reference-card">
+          <div>
+            <div class="reference-type">Executive assessment</div>
+            <p class="reference-text">“Relationship-oriented, entrepreneurial, results-driven and motivated by responsibility.”</p>
+          </div>
+          <div class="reference-name">InterPersona<br>Executive Coaching & Assessment, 2025</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-intro">
+        <div class="kicker">Entrepreneurship</div>
+        <h2>Founder experience strengthened my sales leadership perspective.</h2>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Fashion Genius Technology Lab AG</h3>
+          <p>As Founder & CEO, I built an AI fashion technology venture from zero: positioning, product concept, website, prototype, outreach, customer discovery, investor conversations and go-to-market strategy.</p>
+          <p>This made me a stronger enterprise seller because I now understand the full commercial system behind a SaaS company: product, market, customer pain, messaging, pipeline, conversion and execution.</p>
+        </div>
+        <div class="card">
+          <h3>What I bring back into enterprise sales</h3>
+          <ul>
+            <li>Founder-level ownership and accountability</li>
+            <li>Speed, resilience and prioritization</li>
+            <li>Clearer product-market thinking</li>
+            <li>Better understanding of SaaS growth mechanics</li>
+            <li>Entrepreneurial energy with enterprise discipline</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="keepit" class="section">
+      <div class="card why">
+        <div class="kicker">Why Keepit</div>
+        <h2>Keepit sits exactly where business risk, data protection and enterprise trust meet.</h2>
+        <p class="lead">For me, this is a highly relevant SaaS conversation: customers do not buy backup as a feature. They buy resilience, continuity, compliance confidence and the ability to recover when it matters most.</p>
+        <div class="grid-3" style="margin-top: 34px;">
+          <div class="card"><h3>What Keepit needs</h3><p>Enterprise growth, customer trust, partner leverage and the ability to translate technical risk into business value.</p></div>
+          <div class="card"><h3>What I bring</h3><p>Enterprise sales experience, SaaS transformation, public-sector and regulated-account credibility, and strong stakeholder navigation.</p></div>
+          <div class="card"><h3>Why now</h3><p>I want to combine my enterprise sales background with my entrepreneurial experience in a focused, high-growth SaaS environment.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-intro">
+        <div class="kicker">Closing</div>
+        <h2>My sales philosophy is simple: build trust, create clarity, and make the customer successful.</h2>
+        <p class="sublead">That is how I built long-term relationships at VMware. That is what my references confirm. And that is the mindset I would bring to Keepit.</p>
+      </div>
+      <div class="buttons">
+        <a href="mailto:caroline.steiger@outlook.com" class="btn btn-primary">Email Caroline</a>
+        <a href="https://www.linkedin.com/" class="btn btn-secondary">LinkedIn profile</a>
+      </div>
+      <p class="print-note">Note: Replace the LinkedIn URL with your personal LinkedIn profile before publishing.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2026 Caroline Steiger · Enterprise SaaS Sales Leader · Switzerland
+  </footer>
+</body>
+</html>
